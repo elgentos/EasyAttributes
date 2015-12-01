@@ -1,0 +1,12 @@
+{
+    "name": "elgentos/easy-attributes",
+    "description": "Batch add attribute options, merge attribute options and drag & drop to rearrange their order!",
+    "type": "magento-module",
+    "authors": [
+        {
+            "name": "peterjaap",
+            "email": "peterjaap@elgentos.nl"
+        }
+    ],
+    "require": {}
+}
