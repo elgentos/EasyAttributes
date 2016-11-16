@@ -3,7 +3,7 @@
         <modules>
             <Elgentos_EasyAttributes>
                 <active>true</active>
-                <codePool>local</codePool>
+                <codePool>community</codePool>
             </Elgentos_EasyAttributes>
         </modules>
     </config>
