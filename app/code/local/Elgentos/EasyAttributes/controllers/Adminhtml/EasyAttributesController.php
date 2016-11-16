@@ -1,6 +1,6 @@
 <?php
 
-class Elgentos_EasyAttributes_Adminhtml_IndexController extends Mage_Core_Controller_Front_Action
+class Elgentos_EasyAttributes_Adminhtml_EasyAttributesController extends Mage_Core_Controller_Front_Action
 {
 
     public function indexAction() {

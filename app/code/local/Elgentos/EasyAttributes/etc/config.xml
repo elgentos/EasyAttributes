@@ -7,13 +7,13 @@
     </modules>
     <admin>
         <routers>
-            <easyattributes>
-                <use>admin</use>
+            <adminhtml>
                 <args>
-                    <module>Elgentos_EasyAttributes</module>
-                    <frontName>easyattributes</frontName>
+                    <modules>
+                        <easyattributes before="Mage_Adminhtml">Elgentos_EasyAttributes_Adminhtml</easyattributes>
+                    </modules>
                 </args>
-            </easyattributes>
+            </adminhtml>
         </routers>
     </admin>
     <adminhtml>

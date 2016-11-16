@@ -72,7 +72,7 @@
     </div>
     <div class="box">
         <div class="hor-scroll">
-            <form action="<?php echo $this->getUrl('easyattributes/adminhtml_index/index', array('_current'=>true)); ?>" method="post">
+            <form action="<?php echo $this->getUrl('adminhtml/easyAttributes/index', array('_current'=>true)); ?>" method="post">
                 <p><?php echo Mage::helper('easyattributes')->__('Add your attribute options quickly by putting a new option on each line;'); ?></p>
                 <input type="hidden" name="attribute_id" value="<?php echo $this->getRequest()->getParam('attribute_id'); ?>" />
                 <textarea name="options" style="width:80%;height:300px;"></textarea>
@@ -130,7 +130,7 @@
             <script>
             function submitForm() {
                 if(confirm('Are you sure you want to merge these attributes?')) {
-                    $('edit_form').setAttribute('action','<?php echo $this->getUrl('easyattributes/adminhtml_index/merge', array('_current'=>true)); ?>');
+                    $('edit_form').setAttribute('action','<?php echo $this->getUrl('adminhtml/easyAttributes/merge', array('_current'=>true)); ?>');
                     $('edit_form').submit();
                 }
             }
