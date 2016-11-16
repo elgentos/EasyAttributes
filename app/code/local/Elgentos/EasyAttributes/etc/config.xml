@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Elgentos_EasyAttributes>
-            <version>0.2.1</version>
+            <version>0.2.2</version>
         </Elgentos_EasyAttributes>
     </modules>
     <admin>
@@ -10,7 +10,7 @@
             <adminhtml>
                 <args>
                     <modules>
-                        <easyattributes before="Mage_Adminhtml">Elgentos_EasyAttributes_Adminhtml</easyattributes>
+                        <adminhtml_easyAttributes before="Mage_Adminhtml">Elgentos_EasyAttributes</adminhtml_easyAttributes>
                     </modules>
                 </args>
             </adminhtml>
@@ -26,27 +26,7 @@
                 </Elgentos_EasyAttributes>
             </modules>
         </translate>
-        <layout>
-            <updates>
-                <easyattributes>
-                    <file>easyattributes.xml</file>
-                </easyattributes>
-            </updates>
-        </layout>
     </adminhtml>
-    <frontend>
-        <events>
-            <cms_page_render>
-                <observers>
-                    <easyattributes>
-                        <type>singleton</type>
-                        <class>Elgentos_EasyAttributes_Model_Header</class>
-                        <method>add</method>
-                    </easyattributes>
-                </observers>
-            </cms_page_render>
-        </events>
-    </frontend>
     <global>
        <blocks>
            <adminhtml>
@@ -55,25 +35,10 @@
                </rewrite>
            </adminhtml>
        </blocks>
-        <models>
-            <easyattributes>
-                <class>Elgentos_EasyAttributes_Model</class>
-            </easyattributes>
-        </models>
-        <resources>
-            <easyattributes_setup>
-                <setup>
-                    <module>Elgentos_EasyAttributes</module>
-                    <class>Elgentos_EasyAttributes_Model_Mysql4_Setup</class>
-                </setup>
-            </easyattributes_setup>
-        </resources>
-
-        <helpers>
-            <easyattributes>
-                <class>Elgentos_EasyAttributes_Helper</class>
-            </easyattributes>
-        </helpers>
-
+       <helpers>
+           <easyattributes>
+               <class>Elgentos_EasyAttributes_Helper</class>
+           </easyattributes>
+       </helpers>
     </global>
 </config>
