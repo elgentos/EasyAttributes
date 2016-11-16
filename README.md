@@ -12,4 +12,15 @@ Furthermore, it is now very easy to rearrange the order of the attributes; grab 
 ![screenshot 2014-10-09 10 49 06](https://cloud.githubusercontent.com/assets/431360/4573332/5132c680-4f91-11e4-9c1f-b623dd1e6cf2.png)
 
 ## Changelog
-Added in 0.2.0; possibility to merge existing attribute options together, for example 'Azure blue' and 'Light blue'.
+
+# 0.2.2
+- Refactored merge action code
+- Fixed redirects in backend by adding formkeys and setting correct controller
+- Moved extension from local to community codepool
+- Removed unncessary header setting and about page from configuration
+
+# 0.2.1
+- Fixed old admin routing to new for SUPEE-8788 compatiblity
+
+# 0.2.0
+- Added ppossibility to merge existing attribute options together, for example 'Azure blue' and 'Light blue'.
